@@ -2,38 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PDF Viewer</title>
+  <title>Downloading...</title>
+  <script>
+    window.onload = function () {
+      const link = document.createElement('a');
+      link.href = 'Mueller et al 2025 - Simultaneous Estimation and Model Choice for Big Discrete Time-to-Event Data with Additive Predictors.pdf';
+      link.download = 'Mueller et al 2025 - Simultaneous Estimation and Model Choice for Big Discrete Time-to-Event Data with Additive Predictors.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
   <style>
     body {
-      font-family: sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      color: #333;
-    }
-    .pdf-container {
-      margin-top: 20px;
-      border: 1px solid #ccc;
-      height: 600px;
-    }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      color: #007acc;
+      margin: 0;
+      background: white;
     }
   </style>
 </head>
 <body>
-
-  <h1>PDF Document</h1>
-
-  <div class="pdf-container">
-    <embed src="Mueller et al 2025 - Simultaneous Estimation and Model Choice for Big Discrete Time-to-Event Data with Additive Predictors.pdf" type="application/pdf" width="100%" height="100%" />
-  </div>
-
-  <a href="example.pdf" target="_blank">📄 Open PDF in a new tab</a>
-
 </body>
 </html>
